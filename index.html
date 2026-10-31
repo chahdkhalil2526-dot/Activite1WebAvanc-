@@ -4,98 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameHub</title>
-    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="styleAct.css">
 </head>
 <body>
-    <header>
-        GameHub
+    <header class="navbar">
+        <a href="index.html" class="logo">Game<span>Hub</span></a>
+        <nav>
+           <ul id="menu" class="menu">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="propos.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+           </ul>
+        </nav>
     </header>
+   <section class="sec">
+        <h1>Votre prochain jeu est ici</h1>
+        <p>Parcourez le catalogue, survolez une carte pour voir le trailer, puis ouvrez la fiche.</p>
+        <form class="filtres">
+            <input type="search" id="rech" class="rech" placeholder="Rechercher un jeu ...">
+             <select name="genre">
+                <option value="">Tous les genres</option>
+                <option>MMORPG</option>
+                <option>MOBA</option>
+                <option>Battle Royale</option>
+                <option>Sandbox</option>
+                <option>FPS tactique</option>
+                <option>Action-Aventure</option>
+                <option>Plateforme de jeux</option>
+            </select>
+            <select name="platform">
+                <option>Toutes les plateformes</option>
+                <option>PC</option>
+                <option>PlayStation</option>
+                <option>Switch</option>
+                <option>Xbox</option>
+            </select>
+            <select name="sort" id="tri">
+                <option value="pop">Popularité</option>
+                <option value="date">Date de sortie</option>
+            </select>
+        </form>
+    </section>
     <main>
-        <div class="carte">
-            <img src="ImagesAct/world.jpg"  class="image-carte">
-            <div class="titre">
-                World of Warcraft <br>
-                <span class="genre">MMORPG</span>
+            <div class="carte">
+                <img src="ImagesAct/world.jpg"  class="image-carte">
+                <div class="titre">
+                    World of Warcraft <br>
+                    <span class="genre">Genre : MMORPG</span>
+                </div>
+                <button class="bouton"><a href="jeu1.html">Voir Plus</a></button>
             </div>
-            <button class="bouton"><a href="jeu1.html">Voir Plus</a></button>
-        </div>
-        <div class="carte">
-            <img src="ImagesAct/league.jpg"  class="image-carte">
-            <div class="titre">
-                League of Legends <br>
-                <span class="genre">MOBA</span>
+            <div class="carte">
+                <img src="ImagesAct/league.jpg"  class="image-carte">
+                <div class="titre">
+                    League of Legends <br>
+                    <span class="genre">Genre : MOBA</span>
+                </div>
+                <button class="bouton"><a href="jeu2.html">Voir Plus</a></button>
             </div>
-            <button class="bouton"><a href="jeu2.html">Voir Plus</a></button>
-        </div>
-        <div class="carte">
-            <img src="ImagesAct/fortnite.jpg"  class="image-carte">
-            <div class="titre">
-                Fortnite Battle Royale <br>
-                <span class="genre">Battle Royale</span>
+            <div class="carte">
+                <img src="ImagesAct/fortnite.jpg"  class="image-carte">
+                <div class="titre">
+                    Fortnite Battle Royale <br>
+                    <span class="genre">Genre : Battle Royale</span>
+                </div>
+                <button class="bouton"><a href="jeu3.html">Voir Plus</a></button>
             </div>
-            <button class="bouton"><a href="jeu3.html">Voir Plus</a></button>
-        </div>
-        <div class="carte">
-            <img src="ImagesAct/MineCraft.jpg" class="image-carte">
-            <div class="titre">
-                Minecraft <br>
-                <span class="genre">Sandbox</span>
+            <div class="carte">
+                <img src="ImagesAct/MineCraft.jpg" class="image-carte">
+                <div class="titre">
+                    Minecraft <br>
+                    <span class="genre">Genre : Sandbox</span>
+                </div>
+                <button class="bouton"><a href="jeu4.html">Voir Plus</a></button>
             </div>
-            <button class="bouton"><a href="jeu4.html">Voir Plus</a></button>
-        </div>
-        <div class="carte">
-            <img src="ImagesAct/stricke.jpg"  class="image-carte">
-            <div class="titre">
-                Counter-Strike 2 (CS2) <br>
-                <span class="genre"> FPS tactique </span>
+            <div class="carte">
+                <img src="ImagesAct/stricke.jpg"  class="image-carte">
+                <div class="titre">
+                    Counter-Strike 2 (CS2) <br>
+                    <span class="genre"> Genre : FPS tactique </span>
+                </div>
+                <button class="bouton"><a href="jeu5.html">Voir Plus</a></button>
             </div>
-            <button class="bouton"><a href="jeu5.html">Voir Plus</a></button>
-        </div>
-        <div class="carte">
-            <img src="ImagesAct/GTA.jpg"  class="image-carte">
-            <div class="titre">
-                Grand Theft Auto Online (GTA Online) <br>
-                <span class="genre">Action-Aventure</span>
+            <div class="carte">
+                <img src="ImagesAct/GTA.jpg"  class="image-carte">
+                <div class="titre">
+                    Grand Theft Auto Online (GTA Online) <br>
+                    <span class="genre">Genre : Action-Aventure</span>
+                </div>
+                <button class="bouton"><a href="jeu6.html">Voir Plus</a></button>
             </div>
-            <button class="bouton"><a href="jeu6.html">Voir Plus</a></button>
-        </div>
-        <div class="carte">
-            <img src="ImagesAct/final.jpg" class="image-carte">
-            <div class="titre">
-                 Final Fantasy XIV Online <br>
-                <span class="genre">MMORPG</span>
+            <div class="carte">
+                <img src="ImagesAct/final.jpg" class="image-carte">
+                <div class="titre">
+                    Final Fantasy XIV Online <br>
+                    <span class="genre">Genre : MMORPG</span>
+                </div>
+                <button class="bouton"><a href="jeu7.html">Voir Plus</a></button>
             </div>
-            <button class="bouton"><a href="jeu7.html">Voir Plus</a></button>
-        </div>
-        <div class="carte">
-            <img src="ImagesAct/roblox.jpg" class="image-carte">
-            <div class="titre">
-                Roblox <br>
-                <span class="genre">Plateforme de jeux </span>
+            <div class="carte">
+                <img src="ImagesAct/roblox.jpg" class="image-carte">
+                <div class="titre">
+                    Roblox <br>
+                    <span class="genre">Genre : Plateforme de jeux </span>
+                </div>
+                <button class="bouton"><a href="jeu8.html">Voir Plus</a></button>
             </div>
-            <button class="bouton"><a href="jeu8.html">Voir Plus</a></button>
-        </div>
-        <div class="carte">
-            <img src="ImagesAct/APEX.jpg"  class="image-carte">
-            <div class="titre">
-                Apex Legends <br>
-                <span class="genre">Battle Royale </span>
-            </div>
-            <button class="bouton"><a href="jeu9.html">Voir Plus</a></button>
-        </div>
-        <div class="carte">
-            <img src="ImagesAct/valorant.jpg"  class="image-carte">
-            <div class="titre">
-                Valorant <br>
-                <span class="genre">FPS Tactique</span>
-            </div>
-            <button class="bouton"><a href="jeu10.html">Voir Plus</a></button>
-        </div>
-
-        <script src="scriptIndex.js"></script>
     </main>
-    <footer>
-       
+        <footer class="foot">
+            <div><strong class="logo">Game<span>Hub</span></strong><p>Découvrez, filtrez, jouez.</p></div>
+        <ul>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       <p class="copy">© 2026 GameHub — Projet pédagogique, Programmation Web avancée.</p>
     </footer>
+
+     <script src="scriptIndex.js"></script>
 </body>
 </html>

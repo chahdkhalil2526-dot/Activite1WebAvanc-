@@ -45,11 +45,12 @@ body{
    box-shadow:0 16px 34px rgba(15, 238, 209, 0.368)
 }
 
-.image-carte{
+.image-carte, video{
     width:100%;
     height: 70%;
     object-fit: cover;
 }
+
 .titre{
     font-family: var(--style-police);
     font-weight: bold;
@@ -124,8 +125,7 @@ header{
     gap:1.6rem;
 }
 
-.menu {   
-  
+.menu {    
   list-style: none;
   width: 100%;
   color: var(--color-police);
@@ -156,25 +156,36 @@ a{
 }
 
 .filtres{
-    display: flex;
-    width: 80vm;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
     margin: 25px;
     border-radius: 10px;
     padding: 1em;
     background-color:rgba(144, 137, 137, 0.504) ;
 }
 
+@media screen and (max-width: 599px) {
+    .filtres{
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .filtres{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
 .rech{
     font-family: var(--style-police);
-    width: 30%;
-    padding: 0.25rem;
+    padding: 1rem;
     border-radius: var(--radius);
     border: none;
     background-color: var(--bg-filter);
 }
 
 .filtres select{
-    width:20%;
     margin:10px;
     padding: 1rem;
     background-color: var(--bg-filter);
@@ -215,6 +226,7 @@ footer{
 @media screen and (max-width : 599px) {
     main{
         display: grid;
+        justify-content: center;
         grid-template-columns: auto;
     }
 }
@@ -222,6 +234,7 @@ footer{
 @media screen and (min-width : 1024px) {
     main{
         display: grid;
+        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto ;
         gap: 0;
@@ -233,6 +246,7 @@ footer{
 @media screen and (min-width : 600px) and (max-width : 1023px) {
     main{
         display: grid;
+        justify-content: center;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: auto ;
         gap:0;

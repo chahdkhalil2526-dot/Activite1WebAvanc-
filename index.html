@@ -12,7 +12,6 @@
         <nav>
            <ul id="menu" class="menu">
                 <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
                 <li><a href="propos.html">A propos</a></li>
                 <li><a href="contact.html">Contact</a></li>
            </ul>
@@ -23,7 +22,7 @@
         <p>Parcourez le catalogue, survolez une carte pour voir le trailer, puis ouvrez la fiche.</p>
         <form class="filtres">
             <input type="search" id="rech" class="rech" placeholder="Rechercher un jeu ...">
-             <select name="genre">
+             <select id="genre">
                 <option value="">Tous les genres</option>
                 <option>MMORPG</option>
                 <option>MOBA</option>
@@ -33,14 +32,14 @@
                 <option>Action-Aventure</option>
                 <option>Plateforme de jeux</option>
             </select>
-            <select name="platform">
+            <select id="platform">
                 <option>Toutes les plateformes</option>
                 <option>PC</option>
                 <option>PlayStation</option>
                 <option>Switch</option>
                 <option>Xbox</option>
             </select>
-            <select name="sort" id="tri">
+            <select  id="tri">
                 <option value="pop">Popularité</option>
                 <option value="date">Date de sortie</option>
             </select>
@@ -48,7 +47,7 @@
     </section>
     <main>
             <div class="carte">
-                <img src="ImagesAct/world.jpg"  class="image-carte">
+                <img src="Media/ImagesAct/world.jpg"  class="image-carte" id="world-of-warcraft">
                 <div class="titre">
                     World of Warcraft <br>
                     <span class="genre">Genre : MMORPG</span>
@@ -56,7 +55,7 @@
                 <button class="bouton"><a href="jeu1.html">Voir Plus</a></button>
             </div>
             <div class="carte">
-                <img src="ImagesAct/league.jpg"  class="image-carte">
+                <img src="Media/ImagesAct/league.jpg"  class="image-carte" id="league">
                 <div class="titre">
                     League of Legends <br>
                     <span class="genre">Genre : MOBA</span>
@@ -64,7 +63,7 @@
                 <button class="bouton"><a href="jeu2.html">Voir Plus</a></button>
             </div>
             <div class="carte">
-                <img src="ImagesAct/fortnite.jpg"  class="image-carte">
+                <img src="Media/ImagesAct/fortnite.jpg"  class="image-carte" id="fortnite">
                 <div class="titre">
                     Fortnite Battle Royale <br>
                     <span class="genre">Genre : Battle Royale</span>
@@ -72,7 +71,7 @@
                 <button class="bouton"><a href="jeu3.html">Voir Plus</a></button>
             </div>
             <div class="carte">
-                <img src="ImagesAct/MineCraft.jpg" class="image-carte">
+                <img src="Media/ImagesAct/MineCraft.jpg" class="image-carte" id="minecraft">
                 <div class="titre">
                     Minecraft <br>
                     <span class="genre">Genre : Sandbox</span>
@@ -80,7 +79,7 @@
                 <button class="bouton"><a href="jeu4.html">Voir Plus</a></button>
             </div>
             <div class="carte">
-                <img src="ImagesAct/stricke.jpg"  class="image-carte">
+                <img src="Media/ImagesAct/stricke.jpg"  class="image-carte" id="counter-strike">
                 <div class="titre">
                     Counter-Strike 2 (CS2) <br>
                     <span class="genre"> Genre : FPS tactique </span>
@@ -88,7 +87,7 @@
                 <button class="bouton"><a href="jeu5.html">Voir Plus</a></button>
             </div>
             <div class="carte">
-                <img src="ImagesAct/GTA.jpg"  class="image-carte">
+                <img src="Media/ImagesAct/GTA.jpg"  class="image-carte" id="gta">
                 <div class="titre">
                     Grand Theft Auto Online (GTA Online) <br>
                     <span class="genre">Genre : Action-Aventure</span>
@@ -96,7 +95,7 @@
                 <button class="bouton"><a href="jeu6.html">Voir Plus</a></button>
             </div>
             <div class="carte">
-                <img src="ImagesAct/final.jpg" class="image-carte">
+                <img src="Media/ImagesAct/final.jpg" class="image-carte" id="final-fantasy">
                 <div class="titre">
                     Final Fantasy XIV Online <br>
                     <span class="genre">Genre : MMORPG</span>
@@ -104,7 +103,7 @@
                 <button class="bouton"><a href="jeu7.html">Voir Plus</a></button>
             </div>
             <div class="carte">
-                <img src="ImagesAct/roblox.jpg" class="image-carte">
+                <img src="Media/ImagesAct/roblox.jpg" class="image-carte" id="roblox">
                 <div class="titre">
                     Roblox <br>
                     <span class="genre">Genre : Plateforme de jeux </span>
